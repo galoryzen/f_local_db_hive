@@ -7,7 +7,7 @@ class UserDB extends HiveObject {
   UserDB({
     required this.gender,
     required this.name,
-    required this.country,
+    required this.city,
     required this.email,
     required this.picture,
   });
@@ -17,7 +17,7 @@ class UserDB extends HiveObject {
   @HiveField(1)
   String name;
   @HiveField(2)
-  String country;
+  String city;
   @HiveField(3)
   String email;
   @HiveField(4)

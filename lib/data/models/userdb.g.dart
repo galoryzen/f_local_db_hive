@@ -19,7 +19,7 @@ class UserDBAdapter extends TypeAdapter<UserDB> {
     return UserDB(
       gender: fields[0] as String,
       name: fields[1] as String,
-      country: fields[2] as String,
+      city: fields[2] as String,
       email: fields[3] as String,
       picture: fields[4] as String,
     );
@@ -34,7 +34,7 @@ class UserDBAdapter extends TypeAdapter<UserDB> {
       ..writeByte(1)
       ..write(obj.name)
       ..writeByte(2)
-      ..write(obj.country)
+      ..write(obj.city)
       ..writeByte(3)
       ..write(obj.email)
       ..writeByte(4)
